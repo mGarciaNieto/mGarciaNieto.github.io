@@ -4,24 +4,380 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manuel Garcia-Nieto's Portfotlio</title>
-
+    <title>Manuel Garcia-Nieto</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <!-- BS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <!-- Style Sheet -->
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
-
     <!-- BS bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
+    <!-- typed js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- js -->
+    
+    <script src="js/type.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
   </head>
 
-  <body>
-    <h1>Hello, world!</h1>
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">manuel garcia-nieto</a>
+        <button
+          class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <span class="bi bi-list"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#recent-work">Recent Work</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img
+          class="masthead-avatar mb-5"
+          src="img/me.png"
+          alt="image of Manuel
+          Garcia-Nieto"
+        />
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading mb-0 text-capitalize">Welcome to my Portfolio</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><span class="bi bi-mouse3-fill"></span></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">I am <span class="element"></span></p>
+      </div>
+    </header>
+
+    <section class="page-section portfolio" id="recent-work">
+      <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">My Recent Work</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><span class="bi bi-mouse3"></span></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center">
+          <!-- Portfolio Item 1-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+              <a class="recent-work__item" href="https://mgarcianieto.github.io/FEWD_Project-3_An-Online-Registration-Form/" target="_blank"><img class="img-fluid" src="img/porfolio1.png" alt="portfolio fist project" /></a>
+            </div>
+            <div class="row mt-4 portfolio-item mx-auto">
+              <div class="col-lg-10 mx-auto px-0">
+                <p class="lead">
+                  <span class="strong">An Online Registration Form</span> <br />
+                  In this project I built a responsive, mobile-first registration form using a variety of HTML form elements.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Item 2-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+              <a class="recent-work__item" href="https://mgarcianieto.github.io/FEWD_Project-4_Web-Style-Guide/" target="_blank"><img class="img-fluid h-100 w-100" src="img/portfolio2.png" alt="portfolio second project" /></a>
+            </div>
+            <div class="row mt-4 portfolio-item mx-auto">
+              <div class="col-lg-10 mx-auto px-0">
+                <p class="lead">
+                  <span class="strong">Web Style Guide</span> <br />
+                  Sass style guide that I can drop into any of my projects to speed up styling, layout and development in general.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Item 3-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+              <a class="recent-work__item" href="https://mgarcianieto.github.io/FEWD_Project-5_An-Interactive-Photo-Gallery/" target="_blank"><img class="img-fluid" src="img/portfolio3.png" alt="portfolio third project" /></a>
+            </div>
+            <div class="row mt-4 portfolio-item mx-auto">
+              <div class="col-lg-10 mx-auto px-0">
+                <p class="lead">
+                  <span class="strong">An Interactive Photo Gallery</span> <br />
+                  In this project I've used HTML, CSS and the popular programming language JavaScript to create an interactive, searchable gallery of photos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Item 4-->
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+              <a class="recent-work__item" href="https://mgarcianieto.github.io/FEWD_Project-6_Game-Show-App/" target="_blank"><img class="img-fluid" src="img/portfolio4.png" alt="portfolio fourth project" /></a>
+            </div>
+            <div class="row mt-4 portfolio-item mx-auto">
+              <div class="col-lg-10 mx-auto px-0">
+                <p class="lead">
+                  <span class="strong">Game Show App</span> <br />This is a browser version of “Wheel of Success”, a word guessing game. I've used Javascript to come up with a random phrase that players will try to guess by entering different letters
+                  into the program.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Item 5-->
+          <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+              <a class="recent-work__item" href="https://mgarcianieto.github.io/FEWD_Project-7_WebApp-Dashboard/" target="_blank" rel="noopener noreferrer">
+                <img
+                  class="img-fluid"
+                  src="img/portfolio5.png"
+                  alt="portfolio
+                  fifth project"
+              /></a>
+            </div>
+            <div class="row mt-4 portfolio-item mx-auto">
+              <div class="col-lg-10 mx-auto px-0">
+                <p class="lead">
+                  <span class="strong">WeppApp Dashboard</span> <br />Interactive dashboard for a web application using advanced web techniques including SVG graphics and JavaScript programming. This project involves creating tables, charts, graphics
+                  and other user interface components in a manner that promotes interactivity and usability.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Item 6-->
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+              <a class="recent-work__item" href="https://mgarcianieto.github.io/FEWD_Project-8_API-Employee-Directory/" target="_blank" rel="noopener noreferrer"><img class="img-fluid" src="img/portfolio6.png" alt="portfolio sixth project" /></a>
+            </div>
+            <div class="row mt-4 portfolio-item mx-auto">
+              <div class="col-lg-10 mx-auto px-0">
+                <p class="lead"><span class="strong">API Employee Directory</span> <br />Using JavaScript, I've created an employee directory by communicating with a third-party API (Application Programming Interface).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">About me</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><span class="bi bi-mouse3-fill"></span></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row">
+          <div class="col-lg-4 ms-auto">
+            <p class="lead">I am a student of front end web development, finishing my TechDegree at <span class="strong">TreeHouse</span>; I'm also finishing my degree in computer engineering at the Open University of Catalonia.</p>
+          </div>
+          <div class="col-lg-4 me-auto">
+            <p class="lead">When I'm not doing my homework I like to develop things, collaborate on projects with other people to improve this world we live in and advance my knowledge in artificial intelligence and statistics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="contact">
+      <div class="container">
+        <!-- Contact Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><span class="bi bi-mouse3"></span></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-7">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="https://formsubmit.co/mgarcianieto@proton.me" method="POST">
+              <!-- Name input-->
+              <div class="form-floating mb-3">
+                <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                <label for="name">Full name</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+              </div>
+              <!-- Email address input-->
+              <div class="form-floating mb-3">
+                <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                <label for="email">Email address</label>
+                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+              </div>
+              <!-- Phone number input-->
+              <div class="form-floating mb-3">
+                <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                <label for="phone">Phone number</label>
+                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+              </div>
+              <!-- Message input-->
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  placeholder="Enter
+                  your message here..."
+                  style="height: 10rem"
+                  data-sb-validations="required"
+                ></textarea>
+                <label for="message">Message</label>
+                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+              </div>
+              <!-- Submit Button-->
+              <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Location-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Location</h4>
+            <p class="lead mb-0">
+              4 / 4 - Sunnyhill Court
+              <br />
+              London SW5 9LT - U.K.
+              <br />
+              Phone: +44 7927 291691
+              <br />
+              mgarcianieto@proton.me
+            </p>
+          </div>
+          <!-- Footer Social Icons-->
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Me on the Web</h4>
+
+            <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/M_GarciaNieto" target="_blank"
+              ><svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14
+                  0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0
+                  1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0
+                  1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0
+                  1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0
+                  1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0
+                  0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0
+                  3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0
+                  1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                /></svg
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/manuel-garcia-nieto/" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="56"
+                height="56"
+                fill="currentColor"
+                class="bi bi-linkedin"
+                viewBox="0 0 16
+                  16"
+              >
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16
+                    1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0
+                    15.487 0 14.854V1.146zm4.943
+                    12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554
+                    1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822
+                    0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327
+                    1.248h.016zm4.908
+                    8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878
+                    1.232-.878.869 0 1.216.662 1.216
+                    1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274
+                    0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1
+                    .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                /></svg
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/mGarciaNieto" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="56"
+                height="56"
+                fill="currentColor"
+                class="bi bi-github"
+                viewBox="0 0 16
+                    16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47
+                      7.59.4.07.55-.17.55-.38
+                      0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01
+                      1.08.58 1.23.82.72 1.21 1.87.87
+                      2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                      0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21
+                      2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04
+                      2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82
+                      2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0
+                      1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0
+                      16 8c0-4.42-3.58-8-8-8z"
+                /></svg
+            ></a>
+            <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UCeZh2-ksQ8Gmy14y3h4ti3Q" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="56"
+                height="56"
+                fill="currentColor"
+                class="bi bi-youtube"
+                viewBox="0 0 16
+                      16"
+              >
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01
+                        2.01 0 0 1 1.415 1.42c.101.38.172.883.22
+                        1.402l.01.104.022.26.008.104c.065.914.073 1.77.074
+                        1.957v.075c-.001.194-.01 1.108-.082
+                        2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235
+                        1.558a2.007 2.007 0 0 1-1.415
+                        1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309
+                        0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007
+                        2.007 0 0
+                        1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09
+                        9.82l-.008-.104A31.4 31.4 0 0 1 0
+                        7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007
+                        2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21
+                        2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788
+                        99.788 0 0 1 7.858 2h.193zM6.4
+                        5.209v4.818l4.157-2.408L6.4 5.209z"
+                /></svg
+            ></a>
+          </div>
+          <!-- Footer About Text-->
+          <div class="col-lg-4">
+            <h4 class="text-uppercase mb-4">Quote of the day</h4>
+            <p class="lead mb-0">Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. -Henry Ford</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+      <div class="container"><small>Copyright &copy; Manuel Garcia-Nieto 2022</small></div>
+    </div>
   </body>
 </html>
