@@ -61,7 +61,7 @@ btn.addEventListener('click', (e) => {
       title: 'Please fill out Email address field before sending',
       icon: 'warning'
     })
-  } else if (email.value !== '' && !checkEmailFormat(email)) {
+  } else if (email.value !== '' && !checkEmailFormat(email.value)) {
     Swal.fire({
       title: 'Wrong Email format!',
       icon: 'warning'
@@ -71,7 +71,7 @@ btn.addEventListener('click', (e) => {
       title: 'Please fill out Phone number field before sending',
       icon: 'warning'
     })
-  } else if (phone.value !== '' && !checkPhoneFormat(phone)) {
+  } else if (phone.value !== '' && !checkPhoneFormat(phone.value)) {
     Swal.fire({
       title: 'Wrong Phone number format!',
       icon: 'warning'
@@ -86,11 +86,12 @@ btn.addEventListener('click', (e) => {
       title: `Message successfully sent to: ${fullName.value}`,
       icon: 'success'
     })
+    fullName.value = ''
+    email.value = ''
+    phone.value = ''
+    message.value = ''
   }
-  fullName.value = ''
-  email.value = ''
-  phone.value = ''
-  message.value = ''
+ 
 })
 
 function checkEmailFormat(email) {
