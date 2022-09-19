@@ -12479,3 +12479,13 @@ html {
   border: 5px solid #000;
   transition: all 0.4s ease-in;
 }
+
+@media (max-width: 575.98px) {
+  .masthead .masthead-avatar{
+    width: 15rem;
+  }
+}
+
+.portfolio__item-text{
+  cursor: default !important;
+}
