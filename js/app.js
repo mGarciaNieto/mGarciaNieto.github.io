@@ -91,7 +91,6 @@ btn.addEventListener('click', (e) => {
     phone.value = ''
     message.value = ''
   }
- 
 })
 
 function checkEmailFormat(email) {
@@ -107,3 +106,5 @@ function checkPhoneFormat(phone) {
   }
   return false
 }
+
+document.getElementById('year').innerText = new Date().getFullYear()

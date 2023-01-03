@@ -12481,11 +12481,11 @@ html {
 }
 
 @media (max-width: 575.98px) {
-  .masthead .masthead-avatar{
+  .masthead .masthead-avatar {
     width: 15rem;
   }
 }
 
-.portfolio__item-text{
+.portfolio__item-text {
   cursor: default !important;
 }

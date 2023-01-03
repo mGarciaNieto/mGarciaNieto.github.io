@@ -20,7 +20,7 @@
     <!-- typed js -->
     <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- js -->
-    
+
     <script src="js/type.js" defer></script>
     <script src="js/app.js" defer></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
@@ -228,7 +228,7 @@
               </div>
               <!-- Phone number input-->
               <div class="form-floating mb-3">
-                <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" required/>
+                <input class="form-control" id="phone" name="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" required />
                 <label for="phone">Phone number</label>
                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
               </div>
@@ -377,7 +377,9 @@
     </footer>
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
-      <div class="container"><small>Copyright &copy; Manuel Garcia-Nieto 2022</small></div>
+      <div class="container">
+        <small>Copyright &copy; Manuel Garcia-Nieto <span id="year"></span></small>
+      </div>
     </div>
   </body>
 </html>
